@@ -12,13 +12,11 @@ impl MathService {
         Self(())
     }
 
-    // Service's query
-    pub fn sqrt(&self, y: U256) -> U256 {
+    pub fn sqrt(&mut self, y: u128) -> u128 {
         math::sqrt(y)
     }
 
-    // Service's query
-    pub fn min(&self, x: U256, y: U256) -> U256 {
+    pub fn min(&mut self, x: u128, y: u128) -> u128 {
         math::min(x, y)
     }
 }
