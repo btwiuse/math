@@ -2,8 +2,8 @@ build:
 	# build with release profile
 	cargo build --release
 
-sol:
-	sails-eth --idl ./target/wasm32-gear/release/math.idl --contract-name Math --out Math.sol
+solidity:
+	sails-eth --idl ./target/wasm32-gear/release/math.idl --contract-name Math --out sol/Math.sol
 
 deploy:
 	# deploy release build to testnet and write result to config.yaml
