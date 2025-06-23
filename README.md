@@ -22,4 +22,4 @@ service Math {
 };
 ```
 
-Generated solidity code: [./solidity](./solidity)
+Generated solidity code via `make sol`: [./solidity](./solidity)
