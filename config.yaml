@@ -3,7 +3,7 @@ basedir: ./target/wasm32-gear
 basename: math
 build:
   release:
-    code_id: "0x71104cbe7f02c803eb5bf0b3756a0bfc3378b5a661b41409559db24704e2837c"
+    code_id: "0x29da6e57a830b9243876e806d2bb2d96c3663a8bd0ba252133b7fd9a906ef528"
   debug:
     code_id: null
 deploy:
@@ -13,11 +13,11 @@ deploy:
     };
 
     service Math {
-      query Min : (x: u256, y: u256) -> u256;
-      query Sqrt : (y: u256) -> u256;
+      Min : (x: u256, y: u256) -> u256;
+      Sqrt : (y: u256) -> u256;
     };
 
   args: []
-  code_id: "0x71104cbe7f02c803eb5bf0b3756a0bfc3378b5a661b41409559db24704e2837c"
-  program_id: "0xeb0029ec041fe867b00936c02a3470efd76b63ca37ef967d2cc66923c29ecb93"
+  code_id: "0x29da6e57a830b9243876e806d2bb2d96c3663a8bd0ba252133b7fd9a906ef528"
+  program_id: "0x5b17b303d84303aa1f0cdf45490468e45050dddd4f15f68037817c68ee0f7d78"
   rpc: wss://testnet.vara.network

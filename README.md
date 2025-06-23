@@ -7,3 +7,19 @@ The program workspace includes the following packages:
 - `math-client` is the package containing the client for the program allowing to interact with it from another program, tests, or
   off-chain client.
 
+Ported from solidity library [`Math.sol`](./Math.sol) to rust [`math.rs`](app/src/math.rs).
+
+Program IDL:
+
+```
+constructor {                   
+  New : ();                          
+};
+
+service Math {
+  Min : (x: u256, y: u256) -> u256;
+  Sqrt : (y: u256) -> u256;
+};
+```
+
+Generated solidity code: [./solidity](./solidity)
