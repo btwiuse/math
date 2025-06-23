@@ -1,0 +1,23 @@
+name: math
+basedir: ./target/wasm32-gear
+basename: math
+build:
+  release:
+    code_id: "0x71104cbe7f02c803eb5bf0b3756a0bfc3378b5a661b41409559db24704e2837c"
+  debug:
+    code_id: null
+deploy:
+  idl: |+
+    constructor {
+      New : ();
+    };
+
+    service Math {
+      query Min : (x: u256, y: u256) -> u256;
+      query Sqrt : (y: u256) -> u256;
+    };
+
+  args: []
+  code_id: "0x71104cbe7f02c803eb5bf0b3756a0bfc3378b5a661b41409559db24704e2837c"
+  program_id: "0xeb0029ec041fe867b00936c02a3470efd76b63ca37ef967d2cc66923c29ecb93"
+  rpc: wss://testnet.vara.network
