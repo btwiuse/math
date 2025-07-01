@@ -13,13 +13,13 @@ math-app = { path = "app" }
 
 [build-dependencies]
 math-app = { path = "app" }
-sails-rs = { version = "0.8.1", features = ["wasm-builder"] }
-sails-idl-gen = "0.8.1"
+sails-rs = { version = "0.7.3", features = ["wasm-builder"] }
+sails-idl-gen = "0.7.3"
 
 [dev-dependencies]
 math = { path = ".", features = ["wasm-binary"] }
 math-client = { path = "client" }
-sails-rs = { version = "0.8.1", features = ["gtest"] }
+sails-rs = { version = "0.7.3", features = ["gtest"] }
 tokio = { version = "1.41", features = ["rt", "macros"] }
 
 [features]
